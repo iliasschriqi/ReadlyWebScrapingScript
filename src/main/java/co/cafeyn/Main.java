@@ -13,13 +13,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new FirefoxDriver();
         driver.get("https://fr.readly.com/products/magazines");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         // Scroll to load the page
